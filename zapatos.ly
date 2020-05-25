@@ -136,9 +136,9 @@ tenorMusic = \relative c' {
   d'4\melisma e2 | fis4 e2 | fis4 e d | fis e 
   d4~ | d e2 | fis4 e2 | fis4 e d~ | d c2 | b2. | bes?2.~ | bes4. r8 \melismaEnd
 
-  d,8 d | g4 g8 a4 bes8 | d a( g) r8 f8 f | f f e4 e | d8 d4 r8
-  d,8 d | g4 g8 a4 bes8 | d a( g) r8 f8 f | f f e4 e | d8 d4 r8
-  d8 d | g,4 g8 a4 bes8 | d a( g) r8 f8 f | f f e4 e | d8 d4 r8
+  d,8 d | g4 g8 a4 bes8 | c a( g) r8 f8 f | f f e4 e | d8 d4 r8
+  d,8 d | g4 g8 a4 bes8 | c a( g) r8 f8 f | f f e4 e | d8 d4 r8
+  d8 d | g,4 g8 a4 bes8 | c a( g) r8 f8 f | f f e4 e | d8 d4 r8
 
 
 
@@ -153,7 +153,6 @@ tenorWords = \lyricmode {
   non me poi -- do~a cor -- dar ben -- ne
   non me poi -- do~a cor -- dar ben -- ne
   non me poi -- do~a cor -- dar ben -- ne
-  ay la le lo ay la la lo o
   non me poi -- do~a cor -- dar ben -- ne
   Oh
 
@@ -193,11 +192,29 @@ bassMusic = \relative c {
 
 }
 bassWords = \lyricmode {
-  ten -- nos a mi -- ña ca -- de -- la
+  te -- nos a mi -- ña ca -- de -- la
   as fei -- ri -- ñas de Na -- de -- la
   as fei -- ri -- ñas de Na -- de -- la 
   ay la le lo ay la la lo
-  
+  Oh
+  vin -- do eu a non sei quén -- ne
+  non me poi -- do~a cor -- dar ben -- ne
+  non me poi -- do~a cor -- dar ben -- ne
+  non me poi -- do~a cor -- dar ben -- ne
+  ay la le lo ay la la lo
+  non me poi -- do~a cor -- dar ben -- ne
+  Oh
+
+  A ru -- la vai -- se quei -- xan -- do
+  que lle le -- va -- ron  o ni -- ño
+  ¿Quén cho man -- dou fa -- cer ru -- la
+  tan -- to~a bei -- ra do ca -- mi -- ño
+  tan -- to~a bei -- ra do ca -- mi -- ño
+  ay la le lo ay la la lo
+  A -- ló ven o gai -- tei -- ro por de -- trás do pi -- ñar
+  has -- tra~os pi -- nos lle~a -- xu -- dan a gai -- ti -- ña to -- car,
+  a gai -- ti -- ña to -- car, a gai -- ti -- ña to -- car,
+  a -- ló ven o gai -- tei -- ro por de -- trás do pi -- ñar. 
 }
 
 \score {
@@ -227,6 +244,7 @@ bassWords = \lyricmode {
         \global \clef bass
         \bassMusic
       >>
+      \new Lyrics \lyricsto "baixo" \bassWords
     >>
   >>
 

@@ -36,7 +36,7 @@ sopMusic = \relative c'' {
   d8. c16 | d8 d16 c b8 b d8. c16 | d8 d16 c b4 
   c8. b16 | c8 c16 b a8 a d8. c16 | d8 d16 c b4 
   d8. c16 | d8 d16 c b4 d8. c16 | d8 d16 c b4 
-  c8. b16 | c8 c16 b a8 a d8. c16 | b8 b16 a g2~ | g2.~ | g4 r4  
+  c8. b16 | c8 c16 b a8 a d8. c16 | b8 b16 a g2~ | g2.~ | g2.~ | g4 r4  
 
   % 3 A rula vaise queixando
   d8 d | g4 g8 a4 bes8 | c a( g) r8 d' d | d d c4 c | bes8 bes( a) r8
@@ -71,7 +71,7 @@ altoMusic = \relative c' {
   b8. a16 | b8 b16 a g8 g b8. a16 | b8 b16 a g4 
   a8. g16 | a8 a16 g fis8 fis b8. a16 | b8 b16 a g4 
   b8. a16 | b8 b16 a g4 b8. a16 | b8 b16 a g4 
-  a8. g16 | a8 a16 g fis8 fis b8. a16 | g8 g16 fis d2~ | d2.~ | d4 r4 
+  a8. g16 | a8 a16 g fis8 fis b8. a16 | g8 g16 fis d2~ | d2.~ | d2.~ | d4 r4 
   
   d8 d | g4 g8 a4 bes8 | c a( g) r8 bes8 bes | bes bes a4 a | g8 g( fis) r8 
   d8 d | g4 g8 a4 bes8 | c a( g) r8 bes8 bes | bes bes a4 a | g8 g( fis) r8 
@@ -107,7 +107,7 @@ altoWords = \lyricmode {
   a -- ló ven o gai -- tei -- ro por de -- trás do pi -- ñar
 
   A ru -- la vai -- se quei -- xan -- do
-  que lle le -- va -- ron - o ni -- ño
+  que lle le -- va -- ron  o ni -- ño
   ¿Quén cho man -- dou fa -- cer ru -- la
   tan -- to~a bei -- ra do ca -- mi -- ño
   tan -- to~a bei -- ra do ca -- mi -- ño
@@ -124,8 +124,8 @@ tenorMusic = \relative c' {
   r4. | r2. | r2 d8 d | d d c4 c | ees8 ees( d) r8
   d,8 d | g4 g8 a4 bes8 | d a( g) r8 d'8 d | d d c4 c | ees8 ees( d) r8
   
-  d4~ | d e2 | fis4 e2 | fis4 e d | fis e 
-  d4~ | d e2 | fis4 e2 | fis4 e d~ | d c b~ | b2. | bes?2. 
+  \melisma d4~ | d e2 | fis4 e2 | fis4 e d | fis e 
+  d4~ | d e2 | fis4 e2 | fis4 e d~ | d c b~ | b2. | bes?2. \melismaEnd 
 
   r2. | r2 d8 d | d d c4 c | ees8 ees( d)
   r4. | r2. | r2 d8 d | d d c4 c | ees8 ees( d) r8
@@ -133,8 +133,13 @@ tenorMusic = \relative c' {
   f8 f | bes4 bes8 c4 des8 | ees c( bes) r4. |
   r2. | r2 g8 g | g g g4 g | g8 g( fis2) |
 
-  d'4 e2 | fis4 e2 | fis4 e d | fis e 
-  d4~ | d e2 | fis4 e2 | fis4 e d~ | d c b~ | b2. | bes?2. 
+  \melisma d'4 e2 | fis4 e2 | fis4 e d | fis e 
+  d4~ | d e2 | fis4 e2 | fis4 e d~ | d c b~ | b2. | bes?2.~ | bes4. r8 \melismaEnd
+
+  d,8 d | g4 g8 a4 bes8 | d a( g) r8 f8 f | f f e4 e | d8 d4 r8
+  d,8 d | g4 g8 a4 bes8 | d a( g) r8 f8 f | f f e4 e | d8 d4 r8
+  d8 d | g,4 g8 a4 bes8 | d a( g) r8 f8 f | f f e4 e | d8 d4 r8
+
 
 
  }
@@ -143,7 +148,7 @@ tenorWords = \lyricmode {
   as fei -- ri -- ñas de Na -- de -- la
   as fei -- ri -- ñas de Na -- de -- la 
   ay la le lo ay la la lo
-  O 
+  O __ 
 }
 
 bassMusic = \relative c {
@@ -151,8 +156,8 @@ bassMusic = \relative c {
   r4. | r2. | r2 bes'8 bes | bes bes f4 g | g8 g( d) r8
   d8 d | g4 g8 a4 bes8 | d a( g) r8 bes8 bes | bes bes f4 g | g8 g( d) r8
 
-  g4~ | g2.~ | g2. | d4 e fis | d e  
-  g4~ | g2.~ | g2. | d4 e fis | d e g~ | g2.~ | g2. |
+  \melisma g4~ | g2.~ | g2. | d4 e fis | d e  
+  g4~ | g2.~ | g2. | d4 e fis | d e g~ | g2.~ | g2. | \melismaEnd
   
   r2. | r2 bes8 bes | bes bes f4 g | g8 g( d) 
   r4. | r2. | r2 bes'8 bes | bes bes f4 g | g8 g( d) r8
@@ -161,8 +166,8 @@ bassMusic = \relative c {
   bes,8 c | des des ees4 ees | e8 e( f4)  
   c8 d | ees f g4 f | ees8 ees d2 |
 
-  g2.~ | g2. | d4 e fis | d e  
-  g4~ | g2.~ | g2. | d4 e fis | d e g~ | g2.~ | g2. |
+  \melismaEnd g2.~ | g2. | d4 e fis | d e  
+  g4~ | g2.~ | g2. | d4 e fis | d e g~ | g2.~ | g2. | \melismaEnd
 
 }
 bassWords = \lyricmode {

@@ -40,8 +40,9 @@ sopMusic = \relative c'' {
 
   % 3 A rula vaise queixando
   d8 d | g4 g8 a4 bes8 | c a( g) r8 d' d | d d c4 c | bes8 bes( a) r8
-  d,8 d | g4 g8 a4 bes8 | c a( g) r8 d' d |  d d c4 c | bes8 bes( a) r8
-  d,8 d | g4 g8 a4 bes8 | c a( g2) | r2 d'8 d |  d d c4 c | bes8 bes( a) r8
+  d,8 d | g4 g8 a4 bes8 | c a( g) r8 d' d |  d d c4 c | bes8 bes( a2) 
+        | r2. | r2 d8 d |  d d c4 c | bes8 bes( a) r8
+        d8 d |  d d c4 c | bes8 bes( a) r8
 
   d8. c16 | d8 d16 c b8 b d8. c16 | d8 d16 c b4 
   c8. b16 | c8 c16 b a8 a d8. c16 | d8 d16 c b4 
@@ -73,9 +74,11 @@ altoMusic = \relative c' {
   b8. a16 | b8 b16 a g4 b8. a16 | b8 b16 a g4 
   a8. g16 | a8 a16 g fis8 fis b8. a16 | g8 g16 fis d2~ | d2.~ | d2.~ | d4 r4 
   
-  d8 d | g4 g8 a4 bes8 | c a( g) r8 bes8 bes | bes bes a4 a | g8 g( fis) r8 
-  d8 d | g4 g8 a4 bes8 | c a( g) r8 bes8 bes | bes bes a4 a | g8 g( fis) r8 
-  d8 d | g4 g8 a4 bes8 | c a( g 2) | r2 bes8 bes | bes bes a4 a | g8 g( fis) r8 
+  d8 d | g4 g8 a4 bes8 | c a( g) r8 bes8 bes | bes bes a4 a | g8 g( fis) r8
+  d8 d | g4 g8 a4 bes8 | c a( g) r8 bes8 bes | bes bes a4 a | g8 g( fis2)
+       | r2. | r2 bes8 bes | bes bes a4 a | g8 g( fis) r8 
+       bes8 bes | bes bes a4 a | g8 g( fis) r8
+
   
   b8. a16 | b8 b16 a g8 g b8. a16 | b8 b16 a g4 
   a8. g16 | a8 a16 g fis8 fis b8. a16 | b8 b16 a g4 
@@ -137,10 +140,11 @@ tenorMusic = \relative c' {
   d4~ | d e2 | fis4 e2 | fis4 e d~ | d c2 | b2. | bes?2.~ | bes4. r8 \melismaEnd
 
   d,8 d | g4 g8 a4 bes8 | c a( g) r8 f'8 f | f f e4 e | d8 d4 r8
-  d,8 d | g4 g8 a4 bes8 | c a( g) r8 f'8 f | f f e4 e | d8 d4 r4.
-        | r2. | r2 d8 d | d d c4 c | bes8 bes a4 d8 d | d d c4 c | bes8 bes a
-
-
+  d,8 d | g4 g8 a4 bes8 | c a( g) r8 f'8 f | f f e4 e | d8 d4 r8
+  d,8 d | g4 g8 a4 bes8 | c a( g4) r4 | r2 
+  d8 d | g g a4 bes8( c) | d4 d
+  d8 d | g g a4 bes8( c) | d4 d
+  
  }
 tenorWords = \lyricmode {
   te -- nos a mi -- ña ca -- de -- la
@@ -160,6 +164,9 @@ tenorWords = \lyricmode {
   ¿Quén cho man -- dou fa -- cer ru -- la
   tan -- to~a bei -- ra do ca -- mi -- ño
   tan -- to~a bei -- ra do ca -- mi -- ño
+  ay la le lo ay ay la le lo
+  ay la le lo ay ay la le lo
+  
   ay la le lo ay la la lo
   A -- ló ven o gai -- tei -- ro por de -- trás do pi -- ñar
   has -- tra~os pi -- nos lle~a -- xu -- dan a gai -- ti -- ña to -- car,
@@ -187,8 +194,9 @@ bassMusic = \relative c {
 
   d8 d | g4 g8 a4 bes8 | c a( g) r8 bes8 bes | bes bes f4 f | g8 g( d) r8
   d8 d | g4 g8 a4 bes8 | c a( g) r8 bes,8 c | d f a4 d, | bes8 c (d) r8
-
-
+  d8 d | g4 g8 a4 bes8 | c a( g4) r | r2 d8 d | g g a4 g | d d
+  d8 d | g g a4 g | d d
+  
 }
 bassWords = \lyricmode {
   te -- nos a mi -- ña ca -- de -- la

@@ -38,6 +38,16 @@ sopMusic = \relative c'' {
   d8. c16 | d8 d16 c b4 d8. c16 | d8 d16 c b4 
   c8. b16 | c8 c16 b a8 a d8. c16 | b8 b16 a g2~ | g2.~ | g4 r4  
 
+  % 3 A rula vaise queixando
+  d8 d | g4 g8 a4 bes8 | c a( g) r8 d' d | d d c4 c | bes8 bes( a) r8
+  d,8 d | g4 g8 a4 bes8 | c a( g) r8 d' d |  d d c4 c | bes8 bes( a) r8
+  d,8 d | g4 g8 a4 bes8 | c a( g) r8 d' d |  d d c4 c | bes8 bes( a) r8
+
+  d8. c16 | d8 d16 c b8 b d8. c16 | d8 d16 c b4 
+  c8. b16 | c8 c16 b a8 a d8. c16 | d8 d16 c b4 
+  d8. c16 | d8 d16 c b4 d8. c16 | d8 d16 c b4 
+  c8. b16 | c8 c16 b a8 a d8. c16 | b8 b16 a g2~ | g2.~ | g4 r4  
+
 }
 sopWords = \lyricmode {
 }
@@ -63,7 +73,14 @@ altoMusic = \relative c' {
   b8. a16 | b8 b16 a g4 b8. a16 | b8 b16 a g4 
   a8. g16 | a8 a16 g fis8 fis b8. a16 | g8 g16 fis d2~ | d2.~ | d4 r4 
   
+  d8 d | g4 g8 a4 bes8 | c a( g) r8 bes8 bes | bes bes a4 a | g8 g( fis) r8 
+  d8 d | g4 g8 a4 bes8 | c a( g) r8 bes8 bes | bes bes a4 a | g8 g( fis) r8 
+  d8 d | g4 g8 a4 bes8 | c a( g) r8 bes8 bes | bes bes a4 a | g8 g( fis) r8 
   
+  b8. a16 | b8 b16 a g8 g b8. a16 | b8 b16 a g4 
+  a8. g16 | a8 a16 g fis8 fis b8. a16 | b8 b16 a g4 
+  b8. a16 | b8 b16 a g4 b8. a16 | b8 b16 a g4 
+  a8. g16 | a8 a16 g fis8 fis b8. a16 | g8 g16 fis d2~ | d2.~ | d4 r4 
 }
 altoWords = \lyricmode {
   Za -- pa -- tos de chi -- cu -- la -- te 
@@ -75,7 +92,7 @@ altoWords = \lyricmode {
   A -- ló ven o gai -- tei -- ro por de -- trás do pi -- ñar
   has -- tra~os pi -- nos lle~a -- xu -- dan a gai -- ti -- ña to -- car,
   a gai -- ti -- ña to -- car, a gai -- ti -- ña to -- car,
-  a -- ló ven o gai -- tei -- ro por de -- trás do pi -- ñar
+  a -- ló ven o gai -- tei -- ro por de -- trás do pi -- ñar.
 
   In -- do eu pra non sei dón -- de
   vin -- do eu a non sei quén -- ne
@@ -88,6 +105,17 @@ altoWords = \lyricmode {
   has -- tra~os pi -- nos lle~a -- xu -- dan a gai -- ti -- ña to -- car,
   a gai -- ti -- ña to -- car, a gai -- ti -- ña to -- car,
   a -- ló ven o gai -- tei -- ro por de -- trás do pi -- ñar
+
+  A ru -- la vai -- se quei -- xan -- do
+  que lle le -- va -- ron - o ni -- ño
+  ¿Quén cho man -- dou fa -- cer ru -- la
+  tan -- to~a bei -- ra do ca -- mi -- ño
+  tan -- to~a bei -- ra do ca -- mi -- ño
+  ay la le lo ay la la lo
+  A -- ló ven o gai -- tei -- ro por de -- trás do pi -- ñar
+  has -- tra~os pi -- nos lle~a -- xu -- dan a gai -- ti -- ña to -- car,
+  a gai -- ti -- ña to -- car, a gai -- ti -- ña to -- car,
+  a -- ló ven o gai -- tei -- ro por de -- trás do pi -- ñar.
 
 }
 

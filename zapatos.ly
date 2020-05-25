@@ -41,7 +41,7 @@ sopMusic = \relative c'' {
   % 3 A rula vaise queixando
   d8 d | g4 g8 a4 bes8 | c a( g) r8 d' d | d d c4 c | bes8 bes( a) r8
   d,8 d | g4 g8 a4 bes8 | c a( g) r8 d' d |  d d c4 c | bes8 bes( a) r8
-  d,8 d | g4 g8 a4 bes8 | c a( g) r8 d' d |  d d c4 c | bes8 bes( a) r8
+  d,8 d | g4 g8 a4 bes8 | c a( g2) | r2 d'8 d |  d d c4 c | bes8 bes( a) r8
 
   d8. c16 | d8 d16 c b8 b d8. c16 | d8 d16 c b4 
   c8. b16 | c8 c16 b a8 a d8. c16 | d8 d16 c b4 
@@ -75,7 +75,7 @@ altoMusic = \relative c' {
   
   d8 d | g4 g8 a4 bes8 | c a( g) r8 bes8 bes | bes bes a4 a | g8 g( fis) r8 
   d8 d | g4 g8 a4 bes8 | c a( g) r8 bes8 bes | bes bes a4 a | g8 g( fis) r8 
-  d8 d | g4 g8 a4 bes8 | c a( g) r8 bes8 bes | bes bes a4 a | g8 g( fis) r8 
+  d8 d | g4 g8 a4 bes8 | c a( g 2) | r2 bes8 bes | bes bes a4 a | g8 g( fis) r8 
   
   b8. a16 | b8 b16 a g8 g b8. a16 | b8 b16 a g4 
   a8. g16 | a8 a16 g fis8 fis b8. a16 | b8 b16 a g4 
@@ -136,10 +136,9 @@ tenorMusic = \relative c' {
   d'4\melisma e2 | fis4 e2 | fis4 e d | fis e 
   d4~ | d e2 | fis4 e2 | fis4 e d~ | d c2 | b2. | bes?2.~ | bes4. r8 \melismaEnd
 
-  d,8 d | g4 g8 a4 bes8 | c a( g) r8 f8 f | f f e4 e | d8 d4 r8
-  d,8 d | g4 g8 a4 bes8 | c a( g) r8 f8 f | f f e4 e | d8 d4 r8
-  d8 d | g,4 g8 a4 bes8 | c a( g) r8 f8 f | f f e4 e | d8 d4 r8
-
+  d,8 d | g4 g8 a4 bes8 | c a( g) r8 f'8 f | f f e4 e | d8 d4 r8
+  d,8 d | g4 g8 a4 bes8 | c a( g) r8 f'8 f | f f e4 e | d8 d4 r4.
+        | r2. | r2 d8 d | d d c4 c | bes8 bes a4 d8 d | d d c4 c | bes8 bes a
 
 
  }
@@ -181,13 +180,13 @@ bassMusic = \relative c {
   d8 d | g4 g8 a4 bes8 | c a( g) r8 
   f f | bes4 bes8 c4 des8 | ees c( bes) r8
   bes,8 c | des des ees4 ees | e8 e( f4)  
-  c8 d | ees f g4 f | ees8 ees d2 |
+  c8 d | ees f g4 f | ees8 ees( d2)~ |
 
-  d2.\melisma | g2. | d4 e fis | d e fis
-  g2.~ | g2. | d4 e fis | d e g~ | g2.~ | g2.~ | g4. r8  \melismaEnd
+  d2. | d2.\melisma | d4 e fis | d e fis
+  d2.~ | d2. | d4 e fis | d e g~ | g2.~ | g2.~ | g4. r8  \melismaEnd
 
-  d8 d | g4 g8 a4 bes8 | c a( g) r8 bes8 bes | bes bes f4 f | g8 g d r8
-  d8 d | g4 g8 a4 bes8 | c a( g) r8 bes,8 c | d bes f4 a | d8 d4 d r8
+  d8 d | g4 g8 a4 bes8 | c a( g) r8 bes8 bes | bes bes f4 f | g8 g( d) r8
+  d8 d | g4 g8 a4 bes8 | c a( g) r8 bes,8 c | d f a4 d, | bes8 c (d) r8
 
 
 }

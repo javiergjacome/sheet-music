@@ -186,8 +186,8 @@ bassMusic = \relative c {
   d2.\melisma | g2. | d4 e fis | d e fis
   g2.~ | g2. | d4 e fis | d e g~ | g2.~ | g2.~ | g4. r8  \melismaEnd
 
-  d8 d | g4 g8 a4 bes8 | d a( g) r8 bes8 bes | bes bes f4 f | g8 g d r8
-  d8 d | g4 g8 a4 bes8 | d a( g) r8 bes,8 c | d bes f4 a | d8 d4 d r8
+  d8 d | g4 g8 a4 bes8 | c a( g) r8 bes8 bes | bes bes f4 f | g8 g d r8
+  d8 d | g4 g8 a4 bes8 | c a( g) r8 bes,8 c | d bes f4 a | d8 d4 d r8
 
 
 }

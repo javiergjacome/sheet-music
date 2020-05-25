@@ -142,8 +142,8 @@ tenorMusic = \relative c' {
   d,8 d | g4 g8 a4 bes8 | c a( g) r8 f'8 f | f f e4 e | d8 d4 r8
   d,8 d | g4 g8 a4 bes8 | c a( g) r8 f'8 f | f f e4 e | d8 d4 r8
   d,8 d | g4 g8 a4 bes8 | c a( g4) r4 | r2 
-  d8 d | g g a4 bes8( c) | d4 d
-  d8 d | g g a4 bes8( c) | d4 d
+  d8 d | g g a4 bes8 c | d4 d
+  d,8 d | g g a4 b8 c | d4 d
   
  }
 tenorWords = \lyricmode {
@@ -164,8 +164,8 @@ tenorWords = \lyricmode {
   ¿Quén cho man -- dou fa -- cer ru -- la
   tan -- to~a bei -- ra do ca -- mi -- ño
   tan -- to~a bei -- ra do ca -- mi -- ño
-  ay la le lo ay ay la le lo
-  ay la le lo ay ay la le lo
+  ay la le lo ay ay la la lo
+  ay la le lo ay ay la la lo
   
   ay la le lo ay la la lo
   A -- ló ven o gai -- tei -- ro por de -- trás do pi -- ñar
@@ -217,7 +217,9 @@ bassWords = \lyricmode {
   ¿Quén cho man -- dou fa -- cer ru -- la
   tan -- to~a bei -- ra do ca -- mi -- ño
   tan -- to~a bei -- ra do ca -- mi -- ño
+  ay la le lo ay la la lo  
   ay la le lo ay la la lo
+
   A -- ló ven o gai -- tei -- ro por de -- trás do pi -- ñar
   has -- tra~os pi -- nos lle~a -- xu -- dan a gai -- ti -- ña to -- car,
   a gai -- ti -- ña to -- car, a gai -- ti -- ña to -- car,

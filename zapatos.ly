@@ -5,16 +5,21 @@
   last-bottom-spacing #'basic-distance = #10
 }
 
+\header {
+  title = "Zapatos de chiculate"
+  composer = "arr. Javier Gómez Jácome"
+}
+
 global = {
-  \key g \major
+  \key g \minor
   \time 3/4
 }
 
 sopMusic = \relative c'' {
   % 1 Zapatos de chiculate
-  \partial 4 d,8 d | g4 g8 a4 bes8 | d a( g) r8 d' d | d d c4 c | bes8 bes( a) r8
-  d,8 d | g4 g8 a4 bes8 | d a( g) r8 d' d |  d d c4 c | bes8 bes( a) r8
-  d,8 d | g4 g8 a4 bes8 | d a( g) r8 d' d |  d d c4 c | bes8 bes( a) r8
+  \partial 4 d,8 d | g4 g8 a4 bes8 | c a( g) r8 d' d | d d c4 c | bes8 bes( a) r8
+  d,8 d | g4 g8 a4 bes8 | c a( g) r8 d' d |  d d c4 c | bes8 bes( a) r8
+  d,8 d | g4 g8 a4 bes8 | c a( g) r8 d' d |  d d c4 c | bes8 bes( a) r8
 
   d8. c16 | d8 d16 c b8 b d8. c16 | d8 d16 c b4 
   c8. b16 | c8 c16 b a8 a d8. c16 | d8 d16 c b4 
@@ -22,11 +27,11 @@ sopMusic = \relative c'' {
   c8. b16 | c8 c16 b a8 a d8. c16 | b8 b16 a g2~ | g2.~ | g4 r4  
 
   % 2 Indo eu pra non sei donde
-  d8 d | g4 g8 a4 bes8 | d a( g) r8 d' d | d d c4 c | bes8 bes( a) r8
-  d,8 d | g4 g8 a4 bes8 | d a( g) r8 d' d |  d d c4 c | bes8 bes( a) r8
-  d,8 d | g4 g8 a4 bes8 | d a( g) r4. | r2. | r2
+  d8 d | g4 g8 a4 bes8 | c a( g) r8 d' d | d d c4 c | bes8 bes( a) r8
+  d,8 d | g4 g8 a4 bes8 | c a( g) r8 d' d |  d d c4 c | bes8 bes( a) r8
+  d,8 d | g4 g8 a4 bes8 | c a( g) r4. | r2. | r2
   f'8 f | f f ees4 ees | des8 des( c) r8 
-  ees ees | ees ees d4 d | c8 c c r8
+  ees ees | ees ees d?4 d | c8 c c r8
 
   d8. c16 | d8 d16 c b8 b d8. c16 | d8 d16 c b4 
   c8. b16 | c8 c16 b a8 a d8. c16 | d8 d16 c b4 
@@ -38,18 +43,18 @@ sopWords = \lyricmode {
 }
 
 altoMusic = \relative c' {
-  \partial 4 d8 d | g4 g8 a4 bes8 | d a( g) r8 bes8 bes | bes bes a4 a | g8 g( fis) r8 
-  d8 d | g4 g8 a4 bes8 | d a( g) r8 bes8 bes | bes bes a4 a | g8 g( fis) r8 
-  d8 d | g4 g8 a4 bes8 | d a( g) r8 bes8 bes | bes bes a4 a | g8 g( fis) r8 
+  \partial 4 d8 d | g4 g8 a4 bes8 | c a( g) r8 bes8 bes | bes bes a4 a | g8 g( fis) r8 
+  d8 d | g4 g8 a4 bes8 | c a( g) r8 bes8 bes | bes bes a4 a | g8 g( fis) r8 
+  d8 d | g4 g8 a4 bes8 | c a( g) r8 bes8 bes | bes bes a4 a | g8 g( fis) r8 
   
   b8. a16 | b8 b16 a g8 g b8. a16 | b8 b16 a g4 
   a8. g16 | a8 a16 g fis8 fis b8. a16 | b8 b16 a g4 
   b8. a16 | b8 b16 a g4 b8. a16 | b8 b16 a g4 
   a8. g16 | a8 a16 g fis8 fis b8. a16 | g8 g16 fis d2~ | d2.~ | d4 r4 
   
-  d8 d | g4 g8 a4 bes8 | d a( g) r8 bes8 bes | bes bes a4 a | g8 g( fis) r8 
-  d8 d | g4 g8 a4 bes8 | d a( g) r8 bes8 bes | bes bes a4 a | g8 g( fis) r8 
-  d8 d | g4 g8 a4 bes8 | d a( g) r4. | r2. | r2
+  d8 d | g4 g8 a4 bes8 | c a( g) r8 bes8 bes | bes bes a4 a | g8 g( fis) r8 
+  d8 d | g4 g8 a4 bes8 | c a( g) r8 bes8 bes | bes bes a4 a | g8 g( fis) r8 
+  d8 d | g4 g8 a4 bes8 | c a( g) r4. | r2. | r2
   des'8 des | des des c4 c | bes8 bes(  a) r8
   c8 c | c c bes4 bes  | a8 a a r8
   
@@ -92,7 +97,7 @@ tenorMusic = \relative c' {
   d,8 d | g4 g8 a4 bes8 | d a( g) r8 d'8 d | d d c4 c | ees8 ees( d) r8
   
   d4~ | d e2 | fis4 e2 | fis4 e d | fis e 
-  d4~ | d e2 | fis4 e2 | fis4 e d~ | d c b~ | b2. | bes2. 
+  d4~ | d e2 | fis4 e2 | fis4 e d~ | d c b~ | b2. | bes?2. 
 
   r2. | r2 d8 d | d d c4 c | ees8 ees( d)
   r4. | r2. | r2 d8 d | d d c4 c | ees8 ees( d) r8
@@ -101,7 +106,7 @@ tenorMusic = \relative c' {
   r2. | r2 g8 g | g g g4 g | g8 g( fis2) |
 
   d'4 e2 | fis4 e2 | fis4 e d | fis e 
-  d4~ | d e2 | fis4 e2 | fis4 e d~ | d c b~ | b2. | bes2. 
+  d4~ | d e2 | fis4 e2 | fis4 e d~ | d c b~ | b2. | bes?2. 
 
 
  }
@@ -142,22 +147,31 @@ bassWords = \lyricmode {
 
 \score {
   \new ChoirStaff <<
-    \new Staff = "women" <<
-      \new Voice = "soprano" { \voiceOne << \global \sopMusic >>  }
-      \new Voice = "alto" { \voiceTwo << \global \altoMusic >> }
+    \new Staff <<
+      \new Voice = "soprano" <<
+        \global
+        \sopMusic
+      >>
+      \new Lyrics \lyricsto "soprano" \altoWords
     >>
-%    \new Lyrics \with { alignAboveContext = #"women" }
-%      \lyricsto "soprano" \sopWords
-    \new Lyrics \with { alignBelowContext = #"women" }
-      \lyricsto "alto" \altoWords
-    \new Staff = "men" <<
-      \clef bass
-      \new Voice = "tenor" { \voiceOne << \global \tenorMusic >>  }
-      \new Voice = "baixo" { \voiceTwo << \global \bassMusic >> }
+    \new Staff <<
+      \new Voice = "alto" <<
+        \global
+        \altoMusic
+      >>
     >>
- %   \new Lyrics \with { alignAboveContext = #"men" }
- %     \lyricsto "tenor" \tenorWords
-    \new Lyrics \with { alignBelowContext = #"men" }
-      \lyricsto "baixo" \bassWords
+    \new Staff <<
+      \new Voice = "tenor" <<
+        \global \clef "G_8"
+        \tenorMusic
+      >>
+      \new Lyrics \lyricsto "tenor" \tenorWords
+    >>
+    \new Staff <<
+      \new Voice = "baixo" <<
+        \global \clef bass
+        \bassMusic
+      >>
+    >>
   >>
-}
+  }

@@ -8,6 +8,8 @@ upper = \relative c'' {
   \key c \major
   \time 4/4
 
+  \set Score.markFormatter = #format-mark-alphabet
+
   \repeat volta 2 {
   <c g e>2^"Allegro" <c g e>2 | <c g e>2 <c g e>2 | <d a f>4 <b g d>4 <c g e>2 | 
   <c g e>2 <c g e>2 <c g e>2 <d a f>4 <b g d>4 | \mark \default <c g e>4 r4 <c g e>4 r4 |
@@ -15,18 +17,18 @@ upper = \relative c'' {
   <d b g>2 <d b g>2 | <d b g>2  <d b g>2 | \mark \default <d b g>2 <d b g>2 | <d b g>2 <d b g>2 | <d b g>4 <d b g>4 <d b g>4 <d b g>4 |
   <d b g>2 r2 | \mark \default <d b g>2 <d c fis,>2 |  <c a fis>2 <b g d>2 | <d b g>2 <d b g>2 |  <d b g>2 <d b g>2 | <d b g>2 <d b g>2 |
   <e, g c>4 <f a c>4 <d g b>4 <d g b>4 | \mark \default <e g c>2 <e g c>2 | <e g c>2  <e g c>2 | <e g c>2 <e g c>2 |
-   <e g c>4 <d fis a>4 <d g b>2 | <e g c>4 <d fis a>4 <d g b>2 | <e a c>4 <d fis a>4 <d g b>4 r4 |
+   \mark \default <e g c>4 <d fis a>4 <d g b>2 | <e g c>4 <d fis a>4 <d g b>2 | <e a c>4 <d fis a>4 <d g b>4 r4 |
    r1 | r2 r4 b'4 | d16( c b a) d4 <b d g>2 |  <b d g>4  <b d g>4  <b d g>4 r4 |
   }
   \repeat volta 2 {
    <g b d>2 <g b d>2 | <g b d>2 <g b d>2 | <e a c>4 <d fis a>4  <d g b>2 |
    <c' g e>2 <c g e>2 | <c g e>2 <c g e>2 | <d a f>4 <d b g>4 <c g e>4 r4  |
-   r1 | r1 | <c bes g>4  <c bes g>4  <c a f>4 <c a f>4 | <c bes e,>4  <c bes e,>4 <c a f>4 <c a f>4 |
-   r1 | r1 | r1 | d,8 e fis g a b c d | e fis g a b g g g | <g d b>2 <g d b>2 |
+   r1 | r1 | \mark \default <c bes g>4  <c bes g>4  <c a f>4 <c a f>4 | <c bes e,>4  <c bes e,>4 <c a f>4 <c a f>4 |
+   r1 | r1 | r1 | \mark \default d,8 e fis g a b c d | e fis g a b g g g | <g d b>2 <g d b>2 |
    <g d b>2 <g d b>2 | <g e c>4 <g d b>4 <g e c>2 | <g d b>4 <g e c>4 <g d b>2 |
-   <c, g e>2 <c g e>2 | <c g e>2 <c g e>4 <c g e>4 | <e c g>2  <d a f>2 |
-   <d b g>2 <c g e>2 | <c g e>4 r4  <c g e>4 r4 | <c g e>4 <c g e>4 <c g e>4 r4 |
-   <d b g>2 <d b g>4 <c g e>4 | <c a f>4 <b g d>4 <c g e>2 | <c a f>4 <b g d>4 <c g e>2 |
+   \mark \default <c, g e>2 <c g e>2 | <c g e>2 <c g e>2 | <c g e>2 <c g e>4 <c g e>4 | <c g e>2 <c g e>4 <c g e>4 |
+   \mark \default <e c g>2  <d a f>2 | <d b g>2 <c g e>2 | <c g e>4 r4  <c g e>4 r4 | <c g e>4 <c g e>4 <c g e>4 r4 |
+   <d b g>2 <d b g>4 <c g e>4 |\mark \default <c a f>4 <b g d>4 <c g e>2 | <c a f>4 <b g d>4 <c g e>2 |
    <d a f>4 <b g d>4 <c g e>4 r4 | r1 | r2 r4 e,8 e | g16( f e d) g4 <c g e>2 | <c g e>4 <c g e>4 <c g e>4 r4 |
   }
 }
@@ -48,8 +50,8 @@ lower = \relative c {
   g'8 g g g g g g g | g g g g g g g g | c, c d d g f e d | c c c c c c c c | c c c c c c c c |
   f f g g c,4 r4 | r8 e c4 r8 e c4 | c c c r4 | e8 c e c f c f c | g' c, g' c, f c f c | r1 | r1 |
   r2 f8 c f,4 | d8 e fis g a b c d | e fis g a b g g g | g g g g g g g g | g g d d g, g' b g |
-  c g d' g, c  g e c | b g c e g g, g4 | c8 c c c c c c c | c c' b c g c e, g |
-  c, c c c d d d d | g, g g g  c c c c | c4 r4 c r4 | c8 c c c c4 r4 | g'8 g g g g f e c |
+  c g d' g, c  g e c | b g c e g g, g4 | c8 c c c c c c c | c c c c c c c c | c c' b c g c e, g |
+  c, c' b c g c e, g | c, c c c d d d d | g, g g g  c c c c | c4 r4 c r4 | c8 c c c c4 r4 | g'8 g g g g f e c |
   f e f g c, d e c | f e f g c, d e c | f d g g, c4 r4 | r1 |
   r2 r4 e8 e | g16( f e d) g8 g, c c' g e | c c c c c4 r4
   }

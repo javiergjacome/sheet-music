@@ -28,7 +28,7 @@ upper = \relative c'' {
    <g d b>2 <g d b>2 | <g e c>4 <g d b>4 <g e c>2 | <g d b>4 <g e c>4 <g d b>2 |
    \mark \default <c, g e>2 <c g e>2 | <c g e>2 <c g e>2 | <c g e>2 <c g e>4 <c g e>4 | <c g e>2 <c g e>4 <c g e>4 |
    \mark \default <e c g>2  <d a f>2 | <d b g>2 <c g e>2 | <c g e>4 r4  <c g e>4 r4 | <c g e>4 <c g e>4 <c g e>4 r4 |
-   <d b g>2 <d b g>4 <c g e>4 |\mark \default <c a f>4 <b g d>4 <c g e>2 | <c a f>4 <b g d>4 <c g e>2 |
+   <d b g>2 <d b g>4 <c g e>4 |\mark #10 <c a f>4 <b g d>4 <c g e>2 | <c a f>4 <b g d>4 <c g e>2 |
    <d a f>4 <b g d>4 <c g e>4 r4 | r1 | r2 r4 e,8 e | g16( f e d) g4 <c g e>2 | <c g e>4 <c g e>4 <c g e>4 r4 |
   }
 }

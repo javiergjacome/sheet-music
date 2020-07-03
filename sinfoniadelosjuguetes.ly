@@ -19,6 +19,8 @@ upper = \relative c'' {
    r1 | r2 r4 b'4 | d16( c b a) d4 <b d g>2 |  <b d g>4  <b d g>4  <b d g>4 r4 |
   }
   \repeat volta 2 {
+   <g b d>2 <g b d>2 | <g b d>2  <g b d>2 | <e a c>4 <d fis a>4  <d g b>2 |
+   <c' g e>2 <c g e>2 |<c g e>2 <c g e>2 |
   }
 
 }

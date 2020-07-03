@@ -23,8 +23,10 @@ upper = \relative c'' {
    <c' g e>2 <c g e>2 | <c g e>2 <c g e>2 | <d a f>4 <d b g>4 <c g e>4 r4  |
    r1 | r1 | <c bes g>4  <c bes g>4  <c a f>4 <c a f>4 | <c bes e,>4  <c bes e,>4 <c a f>4 <c a f>4 |
    r1 | r1 | r1 | d,8 e fis g a b c d | e fis g a b g g g | <g d b>2 <g d b>2 |
-  <g d b>2  <g d b>2 | <g e c>4 <g d b>4 <g e c>2 | <g d b>4 <g e c>4 <g d b>2 |
-    
+   <g d b>2 <g d b>2 | <g e c>4 <g d b>4 <g e c>2 | <g d b>4 <g e c>4 <g d b>2 |
+   <c, g e>2 <c g e>2 | <c g e>2 <c g e>4 <c g e>4 | <e c g>2  <d a f>2 |
+   <d b g>2 <c g e>2 | <c g e>4 r4  <c g e>4 r4 | <c g e>4 <c g e>4 <c g e>4 r4 |
+   <d b g>2 <d b g>4 <c g e>4 | 
   }
 
 }

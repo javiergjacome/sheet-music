@@ -9,12 +9,12 @@ upper = \relative c'' {
   \time 4/4
 
   \repeat volta 2 {
-  <c g e>2 <c g e>2 | <c g e>2 <c g e>2 | <d a f>4 <b g d>4 <c g e>2 | 
-  <c g e>2 <c g e>2 <c g e>2 <d a f>4 <b g d>4 | <c g e>4 r4 <c g e>4 r4 |
+  <c g e>2^"Allegro" <c g e>2 | <c g e>2 <c g e>2 | <d a f>4 <b g d>4 <c g e>2 | 
+  <c g e>2 <c g e>2 <c g e>2 <d a f>4 <b g d>4 | \mark \default <c g e>4 r4 <c g e>4 r4 |
   <c g e>2 <c g e>2 |  <d a f>4 <b g d>4 <c g e>4 r4 | r1 |
-  <d b g>2 <d b g>2 | <d b g>2  <d b g>2 | <d b g>2 <d b g>2 | <d b g>2 <d b g>2 | <d b g>4 <d b g>4 <d b g>4 <d b g>4 |
-  <d b g>2 r2 | <d b g>2 <d c fis,>2 |  <c a fis>2 <b g d>2 | <d b g>2 <d b g>2 |  <d b g>2 <d b g>2 | <d b g>2 <d b g>2 |
-  <e, g c>4 <f a c>4 <d g b>4 <d g b>4 | <e g c>2 <e g c>2 | <e g c>2  <e g c>2 | <e g c>2 <e g c>2 |
+  <d b g>2 <d b g>2 | <d b g>2  <d b g>2 | \mark \default <d b g>2 <d b g>2 | <d b g>2 <d b g>2 | <d b g>4 <d b g>4 <d b g>4 <d b g>4 |
+  <d b g>2 r2 | \mark \default <d b g>2 <d c fis,>2 |  <c a fis>2 <b g d>2 | <d b g>2 <d b g>2 |  <d b g>2 <d b g>2 | <d b g>2 <d b g>2 |
+  <e, g c>4 <f a c>4 <d g b>4 <d g b>4 | \mark \default <e g c>2 <e g c>2 | <e g c>2  <e g c>2 | <e g c>2 <e g c>2 |
    <e g c>4 <d fis a>4 <d g b>2 | <e g c>4 <d fis a>4 <d g b>2 | <e a c>4 <d fis a>4 <d g b>4 r4 |
    r1 | r2 r4 b'4 | d16( c b a) d4 <b d g>2 |  <b d g>4  <b d g>4  <b d g>4 r4 |
   }

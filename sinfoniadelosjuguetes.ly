@@ -26,9 +26,9 @@ upper = \relative c'' {
    <g d b>2 <g d b>2 | <g e c>4 <g d b>4 <g e c>2 | <g d b>4 <g e c>4 <g d b>2 |
    <c, g e>2 <c g e>2 | <c g e>2 <c g e>4 <c g e>4 | <e c g>2  <d a f>2 |
    <d b g>2 <c g e>2 | <c g e>4 r4  <c g e>4 r4 | <c g e>4 <c g e>4 <c g e>4 r4 |
-   <d b g>2 <d b g>4 <c g e>4 | 
+   <d b g>2 <d b g>4 <c g e>4 | <c a f>4 <b g d>4 <c g e>2 | <c a f>4 <b g d>4 <c g e>2 |
+   <d a f>4 <b g d>4 <c g e>4 r4 | r1 | r2 r4 e,8 e | g16( f e d) g4 <c g e>2 | <c g e>4 <c g e>4 <c g e>4 r4 |
   }
-
 }
 
 lower = \relative c {
@@ -53,7 +53,6 @@ lower = \relative c {
   f e f g c, d e c | f e f g c, d e c | f d g g, c4 r4 | r1 |
   r2 r4 e8 e | g16( f e d) g8 g, c c' g e | c c c c c4 r4
   }
-
 }
 
 \score {

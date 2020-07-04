@@ -16,7 +16,7 @@ pajaritosN = \relative c' {
 }
 
 pajaritosL = \lyricmode {
-  Pa -- ja -- ri -- tos en su ni -- do ya se pa -- san ya se~han i -- do
+  Pa -- ja -- ri -- tos en su ni -- do, ya se pa -- san ya se~han i -- do
 }
 LunaluneraN = \relative c' {
   \global
@@ -57,11 +57,30 @@ elcieloN = \relative c' {
   y ba -- jan ba -- jan pe -- ro vuel -- ven a re -- mon -- tar
 }
 
+aserrinN = \relative c' {
+  \clef treble
+  \key c \major
+  \time 4/4
+  \partial 4 b8 b | d4 e8 e d4 b8 b | d8 d e e d4
+   b8 b | d4 e8 e d4 b8 b | d8 d e e d4 b8 b | d d d d e e r8
+   \override NoteHead.style = #'cross \autoBeamOn
+   a16 a | a a a a  a a a a  a[ a]
+  \bar "||" 
+}
+
+ aserrinL = \lyricmode {
+  A -- se -- rrín, a -- se -- rrán los ma -- de -- ros de san Juan,
+  los del rey sie -- rran bien, los de la rei -- na tam -- bién,
+  los del du -- que, du -- que, du -- que
+  tri -- qui -- tru -- que tri -- qui -- tru -- que tri -- qui -- tru -- que 
+}
+
 \book {
   \paper {
     print-all-headers = ##t
-    left-margin = 3\cm
-    top-margin = 3\cm
+    left-margin = 2.5\cm
+    right-margin = 2.5\cm
+    top-margin = 2\cm
   }
   \header {
     title = "Primeras canciones para la flauta pentatónica"
@@ -132,6 +151,24 @@ elcieloN = \relative c' {
     \header {
     title = ""
     piece = "El cielo, estrella, cielo"
+    }
+    \layout { 
+      indent = #0 
+      line-width = #150 
+      ragged-last = ##f 
+    }
+  }
+  \score{
+    <<
+      \new Voice = "one" {
+        \autoBeamOff
+        \aserrinN
+      }
+      \new Lyrics \lyricsto "one" \aserrinL
+    >>
+    \header {
+    title = ""
+    piece = "Aserrín, aserrán"
     }
     \layout { 
       indent = #0 

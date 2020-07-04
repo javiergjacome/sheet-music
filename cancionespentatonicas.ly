@@ -61,11 +61,12 @@ elcieloN = \relative c' {
   \paper {
     print-all-headers = ##t
     left-margin = 3\cm
+    top-margin = 3\cm
   }
   \header {
     title = "Primeras canciones para la flauta pentatónica"
   }
-
+  \markup { \vspace #1 }
   \score{
     <<
       \new Voice = "one" {

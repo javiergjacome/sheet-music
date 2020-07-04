@@ -3,10 +3,11 @@
   global =  {
   \clef treble
   \key c \major
-  \time 4/1
+  \time 8/4
   \omit Staff.TimeSignature
   \omit Score.BarLine
   \omit Score.BarNumber
+  \autoBeamOn
 }
 pajaritosN = \relative c' {
   \global
@@ -46,7 +47,7 @@ FirmamentoN = \relative c' {
 
 elcieloN = \relative c' {
   \global
-  b'8  d b d b d4 b8 b d b d b d4 r8 \bar "" \break
+  \partial 8 b'8  d b d b d4 b8 b d b d b d4 r8 \bar "" \break
   b8 d b d b d4 b8 b d d d d b2
   \undo \omit Score.BarLine
   \bar "||" 
@@ -61,10 +62,11 @@ aserrinN = \relative c' {
   \clef treble
   \key c \major
   \time 4/4
-  \partial 4 b8 b | d4 e8 e d4 b8 b | d8 d e e d4
-   b8 b | d4 e8 e d4 b8 b | d8 d e e d4 b8 b | d d d d e e r8
-   \override NoteHead.style = #'cross \autoBeamOn
-   a16 a | a a a a  a a a a  a[ a]
+  \autoBeamOn
+  \partial 4 b'8 b | d4 e8 e d4 b8 b | d8 d e e d4
+   b8 b | d4 e8 e d4 b8 b | d8 d e e d4 b8 b | d d d d e e r8 
+   \override NoteHead.style = #'cross
+   a,16 a | a a a a  a a a a  a[ a]
   \bar "||" 
 }
 
@@ -74,13 +76,31 @@ aserrinN = \relative c' {
   los del du -- que, du -- que, du -- que
   tri -- qui -- tru -- que tri -- qui -- tru -- que tri -- qui -- tru -- que 
 }
+quelluevaN = \relative c' {
+  \clef treble
+  \key c \major
+  \time 4/4
+  \autoBeamOn
+  \partial 8 b'8 | d4 d8 e d4 d8 b | d d d e d4 d8 b | \break 
+  d d d e d4 d8 b | d d d e d4 \autoBeamOff d8
+  \override NoteHead.style = #'cross
+  \autoBeamOn b8 | b4. b8 b4. b8 | b b b b b4 
+}
 
+ quelluevaL = \lyricmode {
+  Que llue -- va que llue -- va, la Vir -- gen de la Cue -- va,
+  los pa -- ja -- ri -- llos can -- tan, las nu -- bes se le -- van -- tan,
+  que sí, que no, que cai -- ga~un cha -- pa -- rrón...
+
+ }
+ 
 \book {
   \paper {
     print-all-headers = ##t
-    left-margin = 2.5\cm
-    right-margin = 2.5\cm
+    left-margin = 3\cm
+    right-margin = 3\cm
     top-margin = 2\cm
+    bottom-margin = 1.5\cm
   }
   \header {
     title = "Primeras canciones para la flauta pentatónica"
@@ -100,7 +120,6 @@ aserrinN = \relative c' {
     }
     \layout { 
       indent = #0 
-      line-width = #150 
       ragged-last = ##f 
     }
   }
@@ -118,7 +137,6 @@ aserrinN = \relative c' {
     }
     \layout { 
       indent = #0 
-      line-width = #150 
       ragged-last = ##f 
     }
   }
@@ -136,7 +154,6 @@ aserrinN = \relative c' {
     }
     \layout { 
       indent = #0 
-      line-width = #150 
       ragged-last = ##f 
     }
   }
@@ -162,6 +179,24 @@ aserrinN = \relative c' {
     <<
       \new Voice = "one" {
         \autoBeamOff
+        \quelluevaN
+      }
+      \new Lyrics \lyricsto "one" \quelluevaL
+    >>
+    \header {
+    title = ""
+    piece = "Que llueva, que llueva"
+    }
+    \layout { 
+      indent = #0 
+      ragged-last = ##f 
+    }
+  }
+  \pageBreak
+  \score{
+    <<
+      \new Voice = "one" {
+        \autoBeamOff
         \aserrinN
       }
       \new Lyrics \lyricsto "one" \aserrinL
@@ -172,7 +207,6 @@ aserrinN = \relative c' {
     }
     \layout { 
       indent = #0 
-      line-width = #150 
       ragged-last = ##f 
     }
   }

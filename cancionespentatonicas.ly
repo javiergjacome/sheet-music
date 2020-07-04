@@ -81,10 +81,10 @@ quelluevaN = \relative c' {
   \key c \major
   \time 4/4
   \autoBeamOn
-  \partial 8 b'8 | d4 d8 e d4 d8 b | d d d e d4 d8 b | \break 
-  d d d e d4 d8 b | d d d e d4 \autoBeamOff d8
+  \partial 8 b'8 | d4 d8 e d4 d8 b | d[ d] d e d4 d8 b | \break 
+  d[ d] d e d4 d8 b | d[ d] d e d4 \autoBeamOff d8
   \override NoteHead.style = #'cross
-  \autoBeamOn b8 | b4. b8 b4. b8 | b b b b b4 
+  \autoBeamOn b8 | b4. b8 b4. b8 | b[ b] b b b4 
 }
 
  quelluevaL = \lyricmode {
@@ -109,7 +109,6 @@ quelluevaN = \relative c' {
   \score{
     <<
       \new Voice = "one" {
-        \autoBeamOff 
         \pajaritosN
       }
       \new Lyrics \lyricsto "one" \pajaritosL
@@ -126,7 +125,6 @@ quelluevaN = \relative c' {
   \score{
     <<
       \new Voice = "one" {
-        \autoBeamOff
         \LunaluneraN
       }
       \new Lyrics \lyricsto "one" \LunaluneraL
@@ -143,7 +141,6 @@ quelluevaN = \relative c' {
   \score{
     <<
       \new Voice = "one" {
-        \autoBeamOff
         \FirmamentoN
       }
       \new Lyrics \lyricsto "one" \FirmamentoL
@@ -160,7 +157,6 @@ quelluevaN = \relative c' {
   \score{
     <<
       \new Voice = "one" {
-        \autoBeamOff
         \elcieloN
       }
       \new Lyrics \lyricsto "one" \elcieloL
@@ -171,24 +167,6 @@ quelluevaN = \relative c' {
     }
     \layout { 
       indent = #0 
-      line-width = #150 
-      ragged-last = ##f 
-    }
-  }
-  \score{
-    <<
-      \new Voice = "one" {
-        \autoBeamOff
-        \quelluevaN
-      }
-      \new Lyrics \lyricsto "one" \quelluevaL
-    >>
-    \header {
-    title = ""
-    piece = "Que llueva, que llueva"
-    }
-    \layout { 
-      indent = #0 
       ragged-last = ##f 
     }
   }
@@ -196,7 +174,6 @@ quelluevaN = \relative c' {
   \score{
     <<
       \new Voice = "one" {
-        \autoBeamOff
         \aserrinN
       }
       \new Lyrics \lyricsto "one" \aserrinL
@@ -208,6 +185,22 @@ quelluevaN = \relative c' {
     \layout { 
       indent = #0 
       ragged-last = ##f 
+    }
+  }
+  \score{
+    <<
+      \new Voice = "one" {
+        \quelluevaN
+      }
+      \new Lyrics \lyricsto "one" \quelluevaL
+    >>
+    \header {
+    title = ""
+    piece = "Que llueva, que llueva"
+    }
+    \layout { 
+      indent = #0 
+      ragged-last = ##t 
     }
   }
 

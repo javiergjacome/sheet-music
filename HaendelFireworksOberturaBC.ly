@@ -11,21 +11,28 @@ upper = \relative c'' {
   \set Score.markFormatter = #format-mark-alphabet
 
   \repeat volta 2 {
-  <fis, d a>2^"Adagio" <fis d a> | <a d, a> <cis a e> | <d a fis>
-  }
-}
+  <fis, d a>2^"Adagio" <d' a fis> | <d a d,> <cis a e> | <d a fis> <d a d,> <d a fis> <e a, g> |
+  <e a, g> <d a fis> <cis a e>4 <d a fis> <d a fis> <cis a e> <d a fis>2 <a fis d> <b fis d> <cis a e> |
+  <d a fis> <cis a fis> <d b fis> <d b g> <cis a e> <cis a fis> <d b fis> <e b e,> |
+  <e cis a> <e cis a>4.  <e cis a>8  <e cis a>4 <cis a e> <e a,>4. <e a,>8 <<{e8. d16 cis4}\\{a4 a}>> r2 r2 <e' cis>4. <e cis>8 <<{e8. d16 cis4}\\{a4 a}>> <e' a,>4. <e a,>8 |
+  <cis a fis>4 <cis a e> <b a fis> <b gis e> <cis a e>2 <cis a e> <a fis> <b a fis> <b gis e>1 |
+  <cis a e>1 <d b>2 <cis a> <b gis>4 <cis a>4 <cis a>4 <b gis>4 <cis a e>2 <cis a e> <d b g> <e a,> |
+  <d a fis>2 r2 r2 <d a fis>4. <d a fis>8 <d a fis>2 r2 r2 <d a fis>4. <d a fis>8 <d a fis>2 <d a fis>2 |
+  
 
+  }
+}  
 lower = \relative c {
   \clef bass
   \key d \major
   \time 4/4
   \repeat volta 2 { 
   d2 d,4. d8 | fis4. fis8 a4. a8 | d4 d, fis g8 a | b4 d cis e | 
-  cis8 a b cis d4. g,8 | a4 d,8 b' a4 a | d,2 d'4. cis8 | b4. b8 a8. g'16 fis8. e16 |
-  d4 d, fis' g8 a | b4 b, b g8 e | a4. a8 a4 fis8 d | g4. g8 gis4. g8 |
+  cis8 a b cis d4. g,8 | a4 d,8 b' a4 a | d2 d'4. cis8 | b4. b8 a8. g16 fis8. e16 |
+  d4 d, fis' g8 a | b4 b, b g8 e | a4. a8 a4 fis8 d | g4. g8 gis4. gis8 |
   a2 a'4. a8 | a4 a, cis'4. cis8 | cis8. b16 a4 r2 | r2 a4. a8 | cis8. b16 a4 cis,4. cis8 |
   fis4 cis d e | a,2 a4 b8. cis16 | d4. d8 dis4. dis8 | e4 fis e d |
-  cis2 d4 cis | b4 gis' a4. a8 | e4 a, e'2 | a, cis4 a | b2 cis4. cis8 |
+  cis2 d4 cis | b4 gis a4. a8 | e'4 a, e'2 | a, cis4 a | b2 cis4. cis8 |
   d2 r2 | r2 d'4. d8 | d4 d, r2 | r2 d'4. d8 | d4 d, d8 c b a |
   g4. g8 g' fis g e | a g a b a b a g | fis4. fis8 fis e fis e |
   g fis f a g a g fis | e4 cis d d, | a'2 fis'4. fis8 |

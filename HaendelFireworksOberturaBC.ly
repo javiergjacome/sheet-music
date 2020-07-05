@@ -7,9 +7,8 @@ upper = \relative c'' {
   \clef treble
   \key d \major
   \time 4/4
-
   \set Score.markFormatter = #format-mark-alphabet
-
+  \compressFullBarRests
   \repeat volta 2 {
   <fis, d a>2^"Adagio" <d' a fis> | <d a d,> <cis a e> | <d a fis> <d a d,> <d a fis> <e a, g> |
   <e a, g> <d a fis> <cis a e>4 <d a fis> <d a fis> <cis a e> <d a fis>2 <a fis d> <b fis d> <cis a e> |
@@ -18,14 +17,19 @@ upper = \relative c'' {
   <cis a fis>4 <cis a e> <b a fis> <b gis e> <cis a e>2 <cis a e> <a fis> <b a fis> <b gis e>1 |
   <cis a e>1 <d b>2 <cis a> <b gis>4 <cis a>4 <cis a>4 <b gis>4 <cis a e>2 <cis a e> <d b g> <e a,> |
   <d a fis>2 r2 r2 <d a fis>4. <d a fis>8 <d a fis>2 r2 r2 <d a fis>4. <d a fis>8 <d a fis>2 <d a fis>2 |
-  
-
+  <d b g> <d b e,> <cis a e> <cis a e> <d a fis><d a fis>
+  <d b g> <d b g> <e cis g> <d a fis> <cis a e> <d a>
+  <d b> <e d b>4 <e cis a> <d a fis>2 <cis a fis> <d b fis> <d b g,> <cis a e> <d a fis> |
+  <cis a e>4 <d a fis> <d a e> <cis a e> <e a fis>2 r2 <d a d,>1 <<{d2. d4}\\{<a fis>2 gis}>> <cis a e>1 
   }
+  <a fis d>4 r4 r4 r4 <fis' d>4 <fis d> <e b> <e b> <d b> <cis a> <cis a> <cis a> |
+  <d a fis> r4 r4 r2.*4
 }  
 lower = \relative c {
   \clef bass
   \key d \major
   \time 4/4
+  \compressFullBarRests
   \repeat volta 2 { 
   d2 d,4. d8 | fis4. fis8 a4. a8 | d4 d, fis g8 a | b4 d cis e | 
   cis8 a b cis d4. g,8 | a4 d,8 b' a4 a | d2 d'4. cis8 | b4. b8 a8. g16 fis8. e16 |
@@ -35,7 +39,7 @@ lower = \relative c {
   cis2 d4 cis | b4 gis a4. a8 | e'4 a, e'2 | a, cis4 a | b2 cis4. cis8 |
   d2 r2 | r2 d'4. d8 | d4 d, r2 | r2 d'4. d8 | d4 d, d8 c b a |
   g4. g8 g' fis g e | a g a b a b a g | fis4. fis8 fis e fis e |
-  g fis f a g a g fis | e4 cis d d, | a'2 fis'4. fis8 |
+  g fis g a g a g fis | e4 cis d d, | a'2 fis'4. fis8 |
   b4 fis g a | d,2 fis4 g8 a | b4 b, b g8 e | a2 d4. g,8 |
   a4 d, a'2 | d,2 r2 | fis'1 | b,2. b4 | a1
    }
@@ -43,7 +47,7 @@ lower = \relative c {
    \mark \markup { \musicglyph #"scripts.segno" }
   \time 3/4
   d,4 r4 r4 r4 d' d g, g g a a a |
-  d, r4 r4 r2. r2. r2. r2. r4 a'4 a d, d d e e e |
+  d, r4 r4 r2.*4 r4 a'4 a d, d d e e e |
   a r4 r4 r4 a8. b16 cis8. a16 | d8. e16 d8. e16 cis8. d16 b4 e e, |
   a r4 r4 r4 a'8. d16 a8. d16 cis4 cis cis d4 r4 r4 r4 d d |
   fis,4 fis fis g8 g16 g16 g8 g b g d' d,16 d16 d8 d fis d a' a,16 a16 a8 a cis a |
@@ -65,6 +69,7 @@ lower = \relative c {
   }
   \new PianoStaff <<
     % \set PianoStaff.instrumentName = #"Piano  "
+    \compressFullBarRests
     \new Staff = "upper" \upper
     \new Staff = "lower" \lower
   >>

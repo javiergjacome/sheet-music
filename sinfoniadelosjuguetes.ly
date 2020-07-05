@@ -16,7 +16,7 @@ upper = \relative c'' {
   <c g e>2\f <c g e>2 |  <d a f>4 <b g d>4 <c g e>4 r4 | r1 |
   <d b g>2\f <d b g>2 | <d b g>2  <d b g>2 | \mark \default <d b g>4 <d b g>4 <d b g>2 | <d b g>4 <d b g>4 <d b g>2 | <d b g>2 <d b g>2 |
   <d b g>2 <d b g>4 r4 | \mark \default <d b g>2\p <c fis,>2\fp | <c a fis>2\p <b g d>2\fp | <d b g>2\f <e c g>2 | <e c g>2 <d b g>2 | <d b g>2 <e c g>2 |
-  <e c g>4 <f d a>4 <d b g>2 | \mark \default <c g e>2\p <c g e>2 | <f c a>4  <f c a>4 <e c g>2\p | <c g e>2  <c g e>2 | <f c a>4 <f c a>4 <e c g>2 |
+  <e c g>4 <f d a>4 <d b g>2 | \mark \default <e c g>2\p <e c g>2 | <f c a>4  <f c a>4 <e c g>2\p | <e c g>2  <e c g>2 | <f c a>4 <f c a>4 <e c g>2 |
    \mark \default <e c g>4 <d a fis>4 <d b g>2 | <e c g>4 <d a fis>4 <d b g>2 | <e c a>4 <d a fis>4 <d b g>4 r4 |
    r1 | r2 r4 b4\f | d16( c b a) d4 <b d g>4 <b d g>4 |  <b d g>4  <b d g>4  <b d g>4 r4 |
   }

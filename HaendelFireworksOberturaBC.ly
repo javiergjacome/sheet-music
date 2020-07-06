@@ -26,7 +26,11 @@ upper = \relative c'' {
   <d a fis> r4 r4 R2.*4 r4 <cis a> <cis a> <b fis> <b fis> <a fis> <gis e> <gis e> <gis e> |
   <a cis,> r4 r4 r4 <cis a> <cis a> <b fis> <b fis> <a fis> <gis e> <gis e> <gis e> |
   <a cis,> r4 r4 r4 <e' cis> <e cis> <e a,> <e a,> <e a,> <fis a> r4 r4 r4 <fis a> <fis a> |
-  
+  <d a> <d a> <d a> <d b g>8 <d b g>16 <d b g> <d b g>8 <d b g> <d b g> <d b g> 
+        <d a fis> <d a fis>16 <d a fis> <d a fis>8 <d a fis> <d a fis> <d a fis> 
+        <cis a e> <cis a e>16 <cis a e> <cis a e>8 <cis a e> <cis a e> <cis a e> |
+  <b g e> <b g e>16 <b g e> <b g e>8 <b g e> <b g e> <b g e> 
+        <b fis d> <b fis d>16 <b fis d> <b fis d>8 <b fis d> <b fis d> <b fis d> <b g d>1 |
 }  
 lower = \relative c {
   \clef bass

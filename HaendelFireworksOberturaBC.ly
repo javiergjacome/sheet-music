@@ -41,8 +41,8 @@ upper = \relative c'' {
   <d a fis><d a fis><d a fis> <d a fis>2 <cis a>4 <d a fis>2 b4 a b cis
   <d a fis>2. fis2 e4 d2 cis4 b a g |
   fis4. fis'8 e cis d4. fis8 e cis <fis a,>4. <fis a,>8 <fis a,> <fis a,> <e a,>4. <e a,>8 <e a,> <e a,> |     
-  <d a>4 <d g,>4. <d g,>8 <cis a e>4. <cis a e>8 <cis a e> <cis a e> <d a fis>4 <d a fis> <d a fis> |
-  
+  <d a>4 <d g,>4. <d g,>8 <cis a e>4. <cis a e>8 <cis a e> <cis a e> <d a fis>4 <d a fis> <d a fis> <e cis a> <e cis a> <e cis a>|
+  <fis d a> <fis d a> <fis d a> <e cis a>2 <fis d a>4~ <fis d a> <e d a>~ <e cis a> <d a fis>4 r4 r4 
 }  
 lower = \relative c {
   \clef bass
@@ -90,9 +90,8 @@ lower = \relative c {
   d d d d4. d8 cis a d4. d8 g g d4 g a
   d,2. d'2 cis4 b2 a4 g fis e |
   d4. d'8 cis a d4. d8 cis a d4. d8 d d cis4. cis8 cis cis |
-  b4 b4. b8 a4. a,8 a a a4 a a |  
-  
-  
+  b4 b4. b8 a4. a,8 a a a4 a a a a a |  
+  a a a a2 d4 g a2 d4^\markup \fermata r4_"Fine" r4 
 }
 
 \score {

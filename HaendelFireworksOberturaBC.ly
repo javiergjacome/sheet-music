@@ -91,7 +91,7 @@ lower = \relative c {
   d,2. d'2 cis4 b2 a4 g fis e |
   d4. d'8 cis a d4. d8 cis a d4. d8 d d cis4. cis8 cis cis |
   b4 b4. b8 a4. a,8 a a a4 a a a a a |  
-  a a a a2 d4 g a2 d4^\markup \fermata r4_"Fine" r4 
+  a a a a2 d4 g a2 d,4^\markup \fermata r4_"Fine" r4 
 }
 
 \score {

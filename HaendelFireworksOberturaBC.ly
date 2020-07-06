@@ -31,8 +31,10 @@ upper = \relative c'' {
         <cis a e> <cis a e>16 <cis a e> <cis a e>8 <cis a e> <cis a e> <cis a e> |
   <b g e> <b g e>16 <b g e> <b g e>8 <b g e> <b g e> <b g e> 
         <b fis d> <b fis d>16 <b fis d> <b fis d>8 <b fis d> <b fis d> <b fis d> <b g d>2. |
-  <a fis d> <g e> <a fis d> <b g d> <a fis d> <g e> <a fis d>
-  
+  <a d,> <g e> <a fis d> <b g d> <a d,>
+  <g e> <a fis d> <a fis d> <a e> <gis d>
+  <a e cis> <a fis d> <a e> <gis d> <a e cis>2 r4 |
+    
 }  
 lower = \relative c {
   \clef bass
@@ -60,17 +62,22 @@ lower = \relative c {
   a r4 r4 r4 a8. b16 cis8. a16 | d8. e16 d8. e16 cis8. d16 b4 e e, |
   a r4 r4 r4 a'8. d16 a8. d16 cis4 cis cis d4 r4 r4 r4 d d |
   fis,4 fis fis g8 g16 g16 g8 g b g d' d,16 d16 d8 d fis d a' a,16 a16 a8 a cis a |
-  e' e16 e16 e8 e g e b' b16 b b8 b d b g b d g, b d |
-  fis, a d fis, a d e, g cis e, g cis d d, fis a fis d g b d g, b d fis, a d fis, a d | 
-  e, g cis e, g cis d a fis d fis a d, fis a d, fis a cis, e a cis, e a b, d gis b, d b |
-  cis a cis e cis a d fis a d, fis a cis, e a cis, e a b, d gis b, d b cis4 a r4 |
-  r8 a'8 a16 b a8 a16 b a8 b2 r4 r8 b8 b16 cis b8 b16 cis b8 cis4. a8 b cis |
-  d4. cis16 b a g fis e d4. cis16 b a g fis e d8 d' d d' d d, d d' d d, d d' |
-  d8 cis16 b a b a g fis g fis e d8 fis a d cis a d d, fis d g g, e' fis g e a g |
-  fis d' d d, d d' d d, r8 d' cis d16 cis b8 b, r8 b' a b16 a g8 g, fis' fis, e' e, |
-  d'4 r8 d'8 cis a d d, r8 d' cis a d d, d' d, d' cis16 b cis8 cis, cis' cis, cis' b16 a |
-  b8 b, b' b, b' a16 g a8 a, a a' a a, a' a, a a' a a, a' a, a a' a a, |
-  a' a, a a' a a, a' a, cis a d4 g a a, d^\markup \fermata r4_"Fine" r4
+  %e' e16 e16 e8 e g e b' b16 b b8 b d b g b d g, b d |
+  %fis, a d fis, a d e, g cis e, g cis d d, fis a fis d g b d g, b d fis, a d fis, a d | 
+  %e, g cis e, g cis d a fis d fis a d, fis a d, fis a cis, e a cis, e a b, d gis b, d b |
+  %cis a cis e cis a d fis a d, fis a cis, e a cis, e a b, d gis b, d b cis4 a r4 |
+  %r8 a'8 a16 b a8 a16 b a8 b2 r4 r8 b8 b16 cis b8 b16 cis b8 cis4. a8 b cis |
+  %d4. cis16 b a g fis e d4. cis16 b a g fis e d8 d' d d' d d, d d' d d, d d' |
+  %d8 cis16 b a b a g fis g fis e d8 fis a d cis a d d, fis d g g, e' fis g e a g |
+  %fis d' d d, d d' d d, r8 d' cis d16 cis b8 b, r8 b' a b16 a g8 g, fis' fis, e' e, |
+  %d'4 r8 d'8 cis a d d, r8 d' cis a d d, d' d, d' cis16 b cis8 cis, cis' cis, cis' b16 a |
+  %b8 b, b' b, b' a16 g a8 a, a a' a a, a' a, a a' a a, a' a, a a' a a, |
+  %a' a, a a' a a, a' a, cis a d4 g a a, d^\markup \fermata r4_"Fine" r4
+  e' e16 e16 e8 e g e b' b16 b b8 b d b g2. |
+  fis e d g
+  fis e d d cis b |
+  a d cis b a2 r4 |
+  
 }
 
 \score {

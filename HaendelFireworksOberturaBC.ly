@@ -23,7 +23,10 @@ upper = \relative c'' {
   <cis e,>4 <d fis,> <d e,> <cis e,> <d a fis>2 r2 <d a d,>1 <<{d2. d4}\\{<a fis>2 gis}>> <cis a e>1 
   }
   <a fis d>4 r4 r4 r4 <fis' d>4 <fis d> <e b> <e b> <d b> <cis a> <cis a> <cis a> |
-  <d a fis> r4 r4 r2.*4
+  <d a fis> r4 r4 R2.*4 r4 <cis a> <cis a> <b fis> <b fis> <a fis> <gis e> <gis e> <gis e> |
+  <a cis,> r4 r4 r4 <cis a> <cis a> <b fis> <b fis> <a fis> <gis e> <gis e> <gis e> |
+  <a cis,> r4 r4 r4 <e' cis> <e cis> <e a,> <e a,> <e a,> <fis a> r4 r4 r4 <fis a> <fis a> |
+  
 }  
 lower = \relative c {
   \clef bass
@@ -47,7 +50,7 @@ lower = \relative c {
    \mark \markup { \musicglyph #"scripts.segno" }
   \time 3/4
   d,4 r4 r4 r4 d' d g, g g a a a |
-  d, r4 r4 r2.*4 r4 a'4 a d, d d e e e |
+  d, r4 r4 R2.*4 r4 a'4 a d, d d e e e |
   a r4 r4 r4 a8. b16 cis8. a16 | d8. e16 d8. e16 cis8. d16 b4 e e, |
   a r4 r4 r4 a'8. d16 a8. d16 cis4 cis cis d4 r4 r4 r4 d d |
   fis,4 fis fis g8 g16 g16 g8 g b g d' d,16 d16 d8 d fis d a' a,16 a16 a8 a cis a |

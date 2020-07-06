@@ -34,7 +34,15 @@ upper = \relative c'' {
   <a d,> <g e> <a fis d> <b g d> <a d,>
   <g e> <a fis d> <a fis d> <a e> <gis d>
   <a e cis> <a fis d> <a e> <gis d> <a e cis>2 r4 |
-    
+  r8 cis8 cis16 d cis8 cis16 d cis8 d2 r4 
+  r8 d8 d16 e d8 d16 e d8 e2. |
+  <d a fis>4 <d a fis> <d a fis> <d a fis>4. <d a fis>8 <d a fis> <d a fis>
+  		<d a fis>4 <d a fis><d a fis><d a fis><d a fis><d a fis> |
+  <d a fis><d a fis><d a fis> <d a fis>2 <cis a>4 <d a fis>2 b4 a b cis
+  <d a fis>2. fis2 e4 d2 cis4 b a g |
+  fis4. fis'8 e cis d4. fis8 e cis <fis a,>4. <fis a,>8 <fis a,> <fis a,> <e a,>4. <e a,>8 <e a,> <e a,> |     
+  <d a>4 <d g,>4. <d g,>8 <cis a e>4. <cis a e>8 <cis a e> <cis a e> <d a fis>4 <d a fis> <d a fis> |
+  
 }  
 lower = \relative c {
   \clef bass
@@ -77,6 +85,13 @@ lower = \relative c {
   fis e d g
   fis e d d cis b |
   a d cis b a2 r4 |
+  r8 a'8 a16 b a8 a16 b a8 b2 r4 r8 b8 b16 cis b8 b16 cis b8 cis4. a8 b cis |
+  d2. d,2. d4 d d d d d |
+  d d d d4. d8 cis a d4. d8 g g d4 g a
+  d,2. d'2 cis4 b2 a4 g fis e |
+  d4. d'8 cis a d4. d8 cis a d4. d8 d d cis4. cis8 cis cis |
+  b4 b4. b8 a4. a,8 a a a4 a a |  
+  
   
 }
 

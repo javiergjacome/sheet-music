@@ -1,9 +1,6 @@
-\header {
-  title = "KINDER-SYMPHONIE"
-  instrument = "Bajo"
-  composer = "Edmund Angerer"
-}
-upper = \relative c'' {
+\version "2.20.0"
+
+upperI = \relative c'' {
   \clef treble
   \key c \major
   \time 4/4
@@ -20,6 +17,7 @@ upper = \relative c'' {
    \mark \default <e c g>4 <d a fis>4 <d b g>2 | <e c g>4 <d a fis>4 <d b g>2 | <e c a>4 <d a fis>4 <d b g>4 r4 |
    r1 | r2 r4 b4\f | d16( c b a) d4 <b d g>4 <b d g>4 |  <b d g>4  <b d g>4  <b d g>4 r4 |
   }
+  \pageBreak
   \repeat volta 2 {
    <g b d>2\p <g b d>2 | <g b d>2 <g b d>2 | <e a c>4 <d fis a>4  <d g b>2 |
    <c' g e>2\f <c g e>2 | <c g e>2 <c g e>2 | <d a f>4 <d b g>4 <c g e>4 r4  |
@@ -33,7 +31,7 @@ upper = \relative c'' {
   }
 }
 
-lower = \relative c {
+lowerI = \relative c {
   \clef bass
   \key c \major
   \time 4/4
@@ -57,11 +55,72 @@ lower = \relative c {
   }
 }
 
+upperII = \relative c'' {
+  \clef treble
+  \key c \major
+  \time 3/4
+
+  \set Score.markFormatter = #format-mark-alphabet
+
+  \repeat volta 2 {
+  r4^"Menuetto" <c g e>2 r4 <c g e>2 r4 r4 <e g,>4 <e g,> <d f,> <c e,> r4 r4 
+  <e g,> <e g,> <d f,> <c e,> <b d,> <d f,> <c e,> <c e,>( <b d,>) r4 |
+  \mark #12
+  r4 r4 <d b> <d b> <c a> <b g> r4 r4 <d b> <d b> <c a> <b g>  <c a> <b g> <a fis> <a fis>( g) r4 
+  }
+  \repeat volta 2 {
+  <d' b> r4 <d b> <e c> r4 g g f d c b r4 r2. r2. |
+  \mark \default 
+  r2. <e g,>4 <d f,> <c e,> r2.
+  <e g,>4 <d f,> <c e,> <d f,> r4 r4 <d f,> <c e,> <b d,> <c e,> 
+  r4 r4 <e g,> <f a,> <e g,> <d f,> <c e,> <b d,>  <b d,>( <c e,>) r4
+  }
+}
+
+lowerII = \relative c {
+  \clef bass
+  \key c \major
+  \time 3/4
+  \repeat volta 2 { 
+  r4 c4^\f c r4 c c | r4 r4 c^\p g' g, c | r4 r4 c g' g, c g( b) c |
+  g' d g, r4 r4 g^\p d' fis g | r4 r4 g, d' fis g | c,^\f d d, g2 r4
+  }
+  \repeat volta 2 {
+  g'^\p r4 g, c r4 c c f fis g g g, | r4 c'8.^\f c,16 c4 | r4 c'8. c,16 c4 r2. |
+  g'4^\p g, c r2. g'4 g, c g' r4 r4 g^\p g g c c, r4 c' c, c^\f f g g, c2^"Fine" r4| 
+  \override Score.RehearsalMark.break-visibility = #begin-of-line-invisible
+ 
+  \mark \markup \fermata      
+  }
+}
+
+\book {
+  \header {
+    title = "KINDER-SYMPHONIE"
+    instrument = "Bajo"
+    composer = "Edmund Angerer"
+  }
+
 \score {
+  \header {
+   piece = I
+  }
   \new PianoStaff <<
-    % \set PianoStaff.instrumentName = #"Piano  "
-    \new Staff = "upper" \upper
-    \new Staff = "lower" \lower
+    \new Staff = "upperI" \upperI
+    \new Staff = "lowerI" \lowerI
   >>
   \layout { }
+}
+\pageBreak
+\score {
+  \header {
+    piece = II
+  }
+  \new PianoStaff <<
+    \new Staff = "upperII" \upperII
+    \new Staff = "lowerII" \lowerII
+  >>
+  \layout { indent = #0 }
+}
+
 }

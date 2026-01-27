@@ -1,4 +1,15 @@
+
 \version "2.24.4"
+
+% =========================
+% título
+% =========================
+
+\header {
+  title = "Dedicatoria"
+  composer = "Águeda y Javier"
+  poet = "Juan Ramón Jiménez"
+}
 
 % =========================
 % Ajustes globales
@@ -6,14 +17,22 @@
 global = {
   \key c \major
   \time 4/4
-  \tempo "Lento"
+  \tempo "Andante" 4 = 80
 }
 
 \paper {
-  left-margin = 20\mm
-  right-margin = 20\mm
+  left-margin = 30\mm
+  right-margin = 30\mm
+  #(define fonts
+    (make-pango-font-tree
+      "Book Antiqua"        ; 
+      "Book Antiqua Bold"   ; Fuente para texto en negrita
+      "Book Antiqua Italic" ; Fuente para texto en cursiva
+      1.0))
+  markup-system-spacing =  #'((basic-distance . 15)
+    (minimum-distance . 10)
+    (padding . 2))
 }
-
 
 % =========================
 % Voces 
@@ -27,7 +46,7 @@ sopranoMusic = \relative c' {
   \partial 4 e4 |
   e d2 g8 f |
   e4 d2 d4 |
-  c8 e g a16 c d8 c e d |
+  c8 e \tuplet 3/2 {g a c} d8 c e d |
   \break
   c4 b2 d8 c |
   b4 a2 a4 |
@@ -36,8 +55,10 @@ sopranoMusic = \relative c' {
   \break
   fis4 fis2 fis4 |
   b b2. |
+  \tempo "più lento" 4 = 56
   r4 b8 g a f! g d |
-  e1 \fermata
+  \tempo "rit."
+  e1 \fermata 
   \bar "|."
 }
 
@@ -86,7 +107,7 @@ bassMusic = \relative c {
   \partial 4 r4 |
   f1 |
   f |
-  e4 b'8 a16 g f4 e |
+  e4 \tuplet 3/2 {b'8 a g} f4 e |
   a2. aes4 |
   g1 |
   g4 a2. |
@@ -128,6 +149,7 @@ bassMusic = \relative c {
       \new Voice = "Bajo"  { \bassMusic }
     >>
   >>
+
   % \midi { 
   %   \context {
   %     \Score
@@ -135,4 +157,17 @@ bassMusic = \relative c {
   %   }
   % }
 
+}
+
+\markup {
+  \fill-line {
+    \left-column {
+      "No corras, ve despacio,"
+      "que adonde tienes que ir es a ti solo!"
+      "¡Ve despacio, no corras,"
+      "que el niño de tu yo, reciennacido"
+      "eterno,"
+      "no te puede seguir!"
+    }
+  }
 }

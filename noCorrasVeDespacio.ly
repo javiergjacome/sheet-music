@@ -1,14 +1,15 @@
 
-\version "2.24.4"
+\version "2.22.2"
 
 % =========================
 % título
 % =========================
 
 \header {
-  title = "Dedicatoria"
-  composer = "Águeda y Javier"
-  poet = "Juan Ramón Jiménez"
+  title = \markup { \column { "Dedicatoria" \vspace #2 } }
+  composer = "Música: Águeda y Javier"
+  poet = "Letra: Juan Ramón Jiménez"
+  tagline = ##f
 }
 
 % =========================
@@ -17,21 +18,8 @@
 global = {
   \key c \major
   \time 4/4
+  \set Score.tempoHideNote = ##t
   \tempo "Andante" 4 = 80
-}
-
-\paper {
-  left-margin = 30\mm
-  right-margin = 30\mm
-  #(define fonts
-    (make-pango-font-tree
-      "Book Antiqua"        ; 
-      "Book Antiqua Bold"   ; Fuente para texto en negrita
-      "Book Antiqua Italic" ; Fuente para texto en cursiva
-      1.0))
-  markup-system-spacing =  #'((basic-distance . 15)
-    (minimum-distance . 10)
-    (padding . 2))
 }
 
 % =========================
@@ -42,7 +30,6 @@ global = {
 sopranoMusic = \relative c' {
   \global
   \voiceOne
-  \omit Rest
   \partial 4 e4 |
   e d2 g8 f |
   e4 d2 d4 |
@@ -56,7 +43,7 @@ sopranoMusic = \relative c' {
   fis4 fis2 fis4 |
   b b2. |
   \tempo "più lento" 4 = 56
-  r4 b8 g a f! g d |
+  \once \omit Rest r4 b8 g a4 g8 d |
   \tempo "rit."
   e1 \fermata 
   \bar "|."
@@ -95,7 +82,7 @@ tenorMusic = \relative c' {
   a2 a |
   ais1 |
   a!4 a2. |
-  r4 g4 a g |
+  r4 g4 f! g |
   a2 gis2 \fermata
   \bar "|."
 }
@@ -122,8 +109,19 @@ bassMusic = \relative c {
 % =========================
 % Maquetación
 % =========================
+
 \paper {
-  %#(set-paper-size "a4")  % activa si quieres tamaño A4
+  left-margin = 30\mm
+  right-margin = 30\mm
+  #(define fonts
+    (make-pango-font-tree
+      "Book Antiqua"        ; 
+      "Book Antiqua Bold"   ; Fuente para texto en negrita
+      "Book Antiqua Italic" ; Fuente para texto en cursiva
+      1.0))
+  markup-system-spacing =  #'((basic-distance . 15)
+    (minimum-distance . 10)
+    (padding . 2))
 }
 
 \layout {
@@ -138,8 +136,8 @@ bassMusic = \relative c {
 % Partitura
 % =========================
 \score {
-  \new PianoStaff \with {
-  } <<
+  \new PianoStaff 
+   <<
     \new Staff = "RH" \with { \clef treble } <<
       \new Voice = "Soprano" { \sopranoMusic }
       \new Voice = "Alto"    { \altoMusic }
@@ -150,19 +148,21 @@ bassMusic = \relative c {
     >>
   >>
 
-  % \midi { 
-  %   \context {
-  %     \Score
-  %     midiInstrument = "reed organ"
-  %   }
-  % }
+  \layout {}
+
+  \midi { 
+    \context {
+      \Score
+      midiInstrument = "reed organ"
+    }
+  }
 
 }
 
 \markup {
   \fill-line {
     \left-column {
-      "No corras, ve despacio,"
+      "¡No corras, ve despacio,"
       "que adonde tienes que ir es a ti solo!"
       "¡Ve despacio, no corras,"
       "que el niño de tu yo, reciennacido"
